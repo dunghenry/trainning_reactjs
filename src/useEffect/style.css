@@ -1,0 +1,15 @@
+.active {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.845);
+}
+button.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.626);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
