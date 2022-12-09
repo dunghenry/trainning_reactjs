@@ -5,6 +5,9 @@ const Main = () => {
     const getData = React.useCallback((type) => {
         return fetch(`https://jsonplaceholder.typicode.com/${type}`);
     }, []);
+    React.useEffect(() => {
+        console.log('Re-render');
+    }, [todos]);
     const fetchTodos = () => {
         getData('todos')
             .then((res) => res.json())

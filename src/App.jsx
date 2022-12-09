@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './customHook/Main';
+import Main from './useCallback';
 import useClock from './useClock';
 import ThemeProvider from './useContext/ThemeContext';
 import useFetch from './useFetch';
@@ -11,8 +11,8 @@ const App = () => {
     return (
         <div>
             {/* <button onClick={() => setDisplay(!display)}>Toggle</button> */}
-            {/* <Main /> */}
-            <p>{timeString}</p>
+            <Main />
+            {/* <p>{timeString}</p> */}
         </div>
     );
 };
